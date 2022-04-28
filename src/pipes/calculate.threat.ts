@@ -6,7 +6,8 @@ export function calculateThreat(gameState: GameStateInit): number {
   let totalThreat = 0;
   for (const monster of gameState.monsters) {
     totalThreat += monster.baseThreat;
-    totalThreat += (distanceToEachother(monster, gameState.base) / MAX_DISTANCE) * 100;
+    totalThreat +=
+      (distanceToEachother(monster, gameState.base) / MAX_DISTANCE) * 100;
   }
   return totalThreat;
 }

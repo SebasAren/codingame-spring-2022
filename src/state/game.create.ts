@@ -104,7 +104,7 @@ export function* createGame(): Generator<GameState> {
     };
     yield {
       ...state,
-      threat: calculateThreat(state),
+      threat: calculateThreat(state)
     };
   }
 }
