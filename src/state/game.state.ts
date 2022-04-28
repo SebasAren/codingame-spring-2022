@@ -1,6 +1,6 @@
 import { Base, Hero, Monster } from '@/entities/interfaces.entity';
 
-export interface GameState {
+export interface GameStateInit {
   turnNumber: number;
   enemyHeroes: Hero[];
   monsters: Monster[];
@@ -9,4 +9,8 @@ export interface GameState {
   base: Base;
   enemyBase: Base;
   heroesPerPlayer: number;
+}
+
+export interface GameState extends GameStateInit {
+  threat: number;
 }

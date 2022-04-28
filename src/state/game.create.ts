@@ -6,6 +6,7 @@ import {
   NO_ATTACK
 } from '@/constants/threat.constants';
 import { Base, Entity, Hero, Monster } from '@/entities/interfaces.entity';
+import { calculateThreat } from '@/pipes/calculate.threat';
 
 export function* createGame(): Generator<GameState> {
   let inputs: string[] = readline().split(' ');
@@ -91,7 +92,7 @@ export function* createGame(): Generator<GameState> {
         });
       }
     }
-    yield {
+    const state = {
       turnNumber,
       enemyHeroes,
       monsters,
@@ -100,6 +101,10 @@ export function* createGame(): Generator<GameState> {
       base,
       enemyBase,
       heroesPerPlayer
+    };
+    yield {
+      ...state,
+      threat: calculateThreat(state),
     };
   }
 }
