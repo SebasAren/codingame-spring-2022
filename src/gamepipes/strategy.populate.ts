@@ -1,6 +1,6 @@
+import { AttackStrategy } from '@/strategies/attack.strategy';
 import { map, pipe } from 'rxjs';
 import { GameState } from '.';
-import { AttackStrategy } from '../strategies/attack.strategy';
 
 export function populateStrategies() {
   return pipe(
