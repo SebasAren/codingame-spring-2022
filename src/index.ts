@@ -1,9 +1,6 @@
 import { from } from 'rxjs';
-import { playGame } from './gamepipes';
-import { createGame } from './gamepipes/create.pipe';
-
-const ATTACK_RADIUS = 5000;
-const DAMAGE_RADIUS = 300;
+import { playGame } from '@/state/game.play';
+import { createGame } from '@/state/game.create';
 
 from(createGame())
   .pipe(playGame())

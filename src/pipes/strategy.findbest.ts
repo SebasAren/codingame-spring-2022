@@ -1,5 +1,5 @@
 import { map, pipe } from 'rxjs';
-import { GameState } from '.';
+import { GameState } from '@/state/game.state';
 
 export function findBestStrategy() {
   return pipe(

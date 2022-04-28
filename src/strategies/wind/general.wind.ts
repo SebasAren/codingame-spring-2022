@@ -1,6 +1,6 @@
-import { LocationBase } from '../../entities/interfaces.entity';
-import { GameState } from '../../gamepipes';
-import { BaseStrategy } from '../interfaces.strategy';
+import { LocationBase } from '@/entities/interfaces.entity';
+import { GameState } from '@/state/game.state';
+import { BaseStrategy } from '@/strategies/interfaces.strategy';
 
 export default class GeneralWindStrategy implements BaseStrategy {
   constructor(public name: string, private gameState: GameState) {}

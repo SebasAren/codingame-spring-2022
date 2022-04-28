@@ -1,5 +1,5 @@
 import { map, pipe } from 'rxjs';
-import { GameState } from '.';
+import { GameState } from '@/state/game.state';
 import { populateStrategies } from './strategy.populate';
 
 export function resetStrategies() {

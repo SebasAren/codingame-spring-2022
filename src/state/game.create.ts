@@ -1,11 +1,11 @@
-import { GameState } from '.';
+import { GameState } from '@/state/game.state';
 import {
   HIGH_THREAT,
   LOW_THREAT,
   MEDIUM_THREAT,
   NO_ATTACK
-} from '../constants/threat.constants';
-import { Base, Entity, Hero, Monster } from '../entities/interfaces.entity';
+} from '@/constants/threat.constants';
+import { Base, Entity, Hero, Monster } from '@/entities/interfaces.entity';
 
 export function* createGame(): Generator<GameState> {
   let inputs: string[] = readline().split(' ');
