@@ -1,4 +1,4 @@
-import { Base, Hero, Monster } from "@/entities/interfaces.entity";
+import { Base, Hero, Monster } from '@/entities/interfaces.entity';
 
 export interface GameState {
   turnNumber: number;

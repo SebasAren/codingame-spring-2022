@@ -1,4 +1,4 @@
-import { LocationBase } from "@/entities/interfaces.entity";
+import { LocationBase } from '@/entities/interfaces.entity';
 
 export function distanceToEachother(
   entity: LocationBase,
