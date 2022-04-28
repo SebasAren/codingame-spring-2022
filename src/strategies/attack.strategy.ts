@@ -1,6 +1,6 @@
 import { Hero, Monster } from '../entities/interfaces.entity';
 import { GameState } from '../gamepipes';
-import { BaseStrategy } from "./interfaces.strategy";
+import { BaseStrategy } from './interfaces.strategy';
 
 export class AttackStrategy implements BaseStrategy {
   constructor(
